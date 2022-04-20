@@ -1,0 +1,17 @@
+@import '../../../styles/mixins';
+
+.grid {
+    width: 100%;
+    max-width: 1400px;
+    padding: 0 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    @media (min-width: $media768) {
+        padding: 0 50px;
+    }
+
+    @media (min-width: $media1024) {
+        padding: 0 110px;
+    }
+}

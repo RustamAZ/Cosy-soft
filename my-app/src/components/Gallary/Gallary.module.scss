@@ -1,0 +1,19 @@
+@import '../../styles/mixins';
+
+.Gallary {
+    .title {
+        @include font_title;
+        color: $c-white;
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .list {
+        background-color: $c-black;
+        border-radius: 30px;
+        padding: 20px;
+        box-sizing: border-box;
+        max-width: 780px;
+    }
+}

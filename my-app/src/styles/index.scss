@@ -1,0 +1,58 @@
+@import 'mixins';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  @include font_text;
+  @include fontsize_text;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: $c-black-decorative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $c-white;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style: none;
+  }
+}
+
+h1 {
+  margin: 20px 0;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+html,
+#root {
+  height: 100%;
+}
